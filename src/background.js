@@ -5,10 +5,19 @@ chrome.runtime.onStartup.addListener(function () {
 async function onload() {
     try {
         let res = await fetch(
-            "https://sg-hk4e-api.hoyolab.com/event/sol/sign?lang=vi-vn",
-            { method: "POST", body: JSON.stringify({ act_id: "e202102251931481" }) });
-        let text = await res.text();
-        console.log(text);
+            "https://sg-hk4e-api.hoyolab.com/event/sol/sign",
+            {method: "POST", body: JSON.stringify({act_id: "e202102251931481"})});
+        console.log(await res.text());
+
+        let res_hi3 = await fetch(
+            "https://sg-public-api.hoyolab.com/event/mani/sign",
+            {method: "POST", body: JSON.stringify({act_id: "e202110291205111"})});
+        console.log(await res_hi3.text());
+
+        let res_hsr = await fetch(
+            "https://sg-public-api.hoyolab.com/event/luna/os/sign",
+            {method: "POST", body: JSON.stringify({act_id: "e202303301540311"})});
+        console.log(await res_hsr.text());
     }
     catch (e) {
         console.log(e);
