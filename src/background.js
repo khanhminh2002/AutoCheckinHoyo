@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 chrome.runtime.onStartup.addListener(function () {
     setTimeout(onload, 5000);
 });
