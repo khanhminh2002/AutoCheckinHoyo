@@ -1,3 +1,7 @@
+# Update
+Since miHoYo has added captcha, this extension will no longer work.
+________________________
+
 # Independent fork
 With addition of HI3, HSR and probably ZZZ in the future so you don't have to waste time opening Hoyolab websites
 
