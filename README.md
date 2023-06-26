@@ -1,5 +1,5 @@
 # Update
-Since miHoYo has added captcha, this extension will no longer work.
+Since miHoYo has added captcha, this extension won't always work
 ________________________
 
 # Independent fork
