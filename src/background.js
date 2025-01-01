@@ -18,6 +18,11 @@ async function onload() {
             "https://sg-public-api.hoyolab.com/event/luna/os/sign",
             {method: "POST", body: JSON.stringify({act_id: "e202303301540311"})});
         console.log(await res_hsr.text());
+
+        let res_zzz = await fetch(
+            "https://sg-public-api.hoyolab.com/event/luna/zzz/os/sign",
+            {method: "POST", body: JSON.stringify({act_id: "e202406031448091"})});
+        console.log(await res_hsr.text());
     }
     catch (e) {
         console.log(e);
