@@ -22,7 +22,7 @@ async function onload() {
         let res_zzz = await fetch(
             "https://sg-public-api.hoyolab.com/event/luna/zzz/os/sign",
             {method: "POST", body: JSON.stringify({act_id: "e202406031448091"})});
-        console.log(await res_hsr.text());
+        console.log(await res_zzz.text());
     }
     catch (e) {
         console.log(e);
