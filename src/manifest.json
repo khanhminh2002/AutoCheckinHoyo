@@ -1,24 +1,18 @@
 {
-   "name": "Hoyo Checkin Combined",
-   "description": "Combined daily check-in tool for multiple HoYoLAB events, including Zenless Zone Zero, Genshin Impact, Honkai Impact 3rd, and Honkai: Star Rail.",
-   "version": "1.0.0",
-   "manifest_version": 3,
-   "action": {
-      "default_icon": {
-         "16": "icons/success/icon16.png",
-         "32": "icons/success/icon32.png",
-         "64": "icons/success/icon64.png"
-      },
-      "default_title": "Hoyo Checkin Combined"
-   },
-   "background": {
-      "service_worker": "background.js"
-   },
-   "permissions": ["storage", "alarms"],
-   "host_permissions": ["*://*.hoyolab.com/*"],
-   "icons": {
-      "48": "icons/main/icon48.png",
-      "96": "icons/main/icon96.png"
-   },
-   "update_url": "https://clients2.google.com/service/update2/crx"
+    "name": "Hoyo checkin",
+    "description": "Hoyo checkin by Topovn, modified from tqk2811",
+    "version": "0.1",
+    "host_permissions": [ "*://*.hoyolab.com/*" ],
+    "permissions": [
+        "webRequest"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+  "icons": {
+    "128": "img/icon.png",
+    "16": "img/icon.png",
+    "48": "img/icon.png"
+  },
+    "manifest_version": 3
 }
